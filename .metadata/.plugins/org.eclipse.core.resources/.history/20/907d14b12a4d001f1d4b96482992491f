@@ -1,0 +1,6 @@
+package dio.project.domain.model;
+
+public class Feature extends BaseItem {
+	
+
+}
