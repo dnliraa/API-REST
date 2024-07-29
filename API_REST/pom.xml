@@ -54,6 +54,23 @@
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
+		<dependency>
+    <groupId>io.springfox</groupId>
+    <artifactId>springfox-swagger2</artifactId>
+    <version>3.0.0</version>
+</dependency>
+<dependency>
+    <groupId>org.hibernate</groupId>
+    <artifactId>hibernate-core</artifactId>
+    <version>6.5.2.Final</version>
+    <type>pom</type>
+</dependency>
+<dependency>
+    <groupId>org.apache.maven.plugins</groupId>
+    <artifactId>maven-jar-plugin</artifactId>
+    <version>3.4.2</version>
+</dependency>
+
 	</dependencies>
 
 	<build>
@@ -62,6 +79,18 @@
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
 			</plugin>
+			<plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-jar-plugin</artifactId>
+            <configuration>
+                <archive>
+                    <manifest>
+                        <mainClass>dio.project.Application</mainClass>
+                    </manifest>
+                </archive>
+            </configuration>
+        </plugin>
+			
 		</plugins>
 	</build>
 

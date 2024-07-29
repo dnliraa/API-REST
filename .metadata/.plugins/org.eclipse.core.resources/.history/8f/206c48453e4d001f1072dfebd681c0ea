@@ -1,0 +1,5 @@
+package dio.project.controlle.exception;
+
+public class GlobalExceptionHandler {
+
+}

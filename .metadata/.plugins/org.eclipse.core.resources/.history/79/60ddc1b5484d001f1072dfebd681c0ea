@@ -1,0 +1,9 @@
+spring:
+  datasource:
+    url: postgresql://postgres:nZeTgacMfTjPryYZottclEUzXloeETqm@monorail.proxy.rlwy.net:40240/railway
+    username: ${PGUSER}
+    password: ${PGPASSWORD}
+  jpa:
+    open-in-view: false
+    hibernate:
+      ddl-auto: create

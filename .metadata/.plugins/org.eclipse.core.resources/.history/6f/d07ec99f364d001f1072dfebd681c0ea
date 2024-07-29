@@ -1,0 +1,22 @@
+package dio.project.service.imp;
+
+import dio.project.domain.model.User;
+import dio.project.service.UserService;
+
+public class UserServiceImp implements UserService{
+
+	@Override
+	public User findById(Long id) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public User create(User userToCreate) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+	
+	
+
+}
